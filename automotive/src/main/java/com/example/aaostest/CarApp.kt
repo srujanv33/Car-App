@@ -1,9 +1,6 @@
 package com.example.aaostest
 
-import android.Manifest
-import android.app.PendingIntent
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.speech.RecognitionListener
@@ -12,7 +9,6 @@ import android.speech.SpeechRecognizer
 import android.speech.SpeechRecognizer.RESULTS_RECOGNITION
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.car.app.CarContext
 import androidx.car.app.CarToast
@@ -21,11 +17,7 @@ import androidx.car.app.model.Action
 import androidx.car.app.model.ActionStrip
 import androidx.car.app.model.MessageTemplate
 import androidx.car.app.model.Template
-import androidx.core.app.ActivityCompat
-import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import androidx.core.app.RemoteInput
-import androidx.core.content.ContextCompat
 import java.util.Locale
 
 

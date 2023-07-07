@@ -2,7 +2,7 @@
 <voice-interaction-service
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:sessionService=
-        "com.example.AppService"
+        "com.example.via.VoiceService"
     android:recognitionService=
         "com.example.RecognitionService"
     android:settingsActivity=

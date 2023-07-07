@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:andorid="http://schemas.android.com/apk/res-auto">
-<!--    <capability andorid:name="actions.intent.GET_ORDER">-->
+<!--    <capability andorid:name="actions.intent.CREATE_MESSAGE">-->
 <!--        <app-widget-->
-<!--            android:identifier="GET_ORDER"-->
-<!--            android:targetClass="CarAppActivity"-->
-<!--            andorid:targetPackage="androidx.car.app">-->
+<!--            android:identifier="CREATE_MESSAGE"-->
+<!--            android:action="android.intent.action.VIEW"-->
+<!--            android:targetClass="com.example.aaostest.CarApp"-->
+<!--            andorid:targetPackage="com.example.aaostest">-->
 <!--            <parameter-->
-<!--                android:name="order.orderItem.name"-->
-<!--                android:key="name">-->
+<!--                android:name="message.text"-->
+<!--                android:key="text">-->
 <!--            </parameter>-->
 <!--            <extra-->
 <!--                android:name="hasTts"-->
