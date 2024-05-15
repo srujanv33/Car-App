@@ -35,7 +35,7 @@ class CarApp(carContext: CarContext) : Screen(carContext) {
     override fun onGetTemplate(): Template {
         mNotificationManager = NotificationManagerCompat.from(carContext)
 
-        setupSpeechRecognition()
+//        setupSpeechRecognition()
 
         action = Action.Builder()
             .setOnClickListener {
@@ -68,51 +68,51 @@ class CarApp(carContext: CarContext) : Screen(carContext) {
     }
 
     @RequiresApi(Build.VERSION_CODES.S)
-    private fun setupSpeechRecognition() {
-        speechRecognizer = SpeechRecognizer.createOnDeviceSpeechRecognizer(carContext)
-        recognizer = object : RecognitionListener {
-            override fun onReadyForSpeech(params: Bundle?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onBeginningOfSpeech() {
-                TODO("Not yet implemented")
-            }
-
-            override fun onRmsChanged(rmsdB: Float) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onBufferReceived(buffer: ByteArray?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onEndOfSpeech() {
-                TODO("Not yet implemented")
-            }
-
-            override fun onError(error: Int) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onResults(results: Bundle?) {
-                if (results != null) {
-                    val speechList = results.getStringArrayList(RESULTS_RECOGNITION)
-                    CarToast.makeText(carContext, speechList!![0], CarToast.LENGTH_SHORT).show()
-                }
-            }
-
-            override fun onPartialResults(partialResults: Bundle?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onEvent(eventType: Int, params: Bundle?) {
-                TODO("Not yet implemented")
-            }
-        }
-
-        speechRecognizer.setRecognitionListener(recognizer)
-    }
+//    private fun setupSpeechRecognition() {
+////        speechRecognizer = SpeechRecognizer.createOnDeviceSpeechRecognizer(carContext)
+//        recognizer = object : RecognitionListener {
+//            override fun onReadyForSpeech(params: Bundle?) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onBeginningOfSpeech() {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onRmsChanged(rmsdB: Float) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onBufferReceived(buffer: ByteArray?) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onEndOfSpeech() {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onError(error: Int) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onResults(results: Bundle?) {
+//                if (results != null) {
+//                    val speechList = results.getStringArrayList(RESULTS_RECOGNITION)
+//                    CarToast.makeText(carContext, speechList!![0], CarToast.LENGTH_SHORT).show()
+//                }
+//            }
+//
+//            override fun onPartialResults(partialResults: Bundle?) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onEvent(eventType: Int, params: Bundle?) {
+//                TODO("Not yet implemented")
+//            }
+//        }
+//
+//        speechRecognizer.setRecognitionListener(recognizer)
+//    }
 
     private fun textToSpeech() {
         val list = mutableListOf<String>()
